@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+  </head>
+  <body class="bg-[#141526] text-[#7D7B88]">
+    <nav
+      class="flex gap-5 justify-end relative top-10 right-10 text-lg text-[#7D7B88]"
+    >
+      <p>
+        <a href="./index.html" class="text-white underline">Home</a>
+      </p>
+      <p><a href="./pages/tutorial.html" target="_blank">Tutorial</a></p>
+      <p><a href="./pages/tentang.html" target="_blank">Tentang</a></p>
+    </nav>
+    <div class="h-screen flex flex-col gap-5 justify-center items-center">
+      <p id="time" class="text-3xl font-medium">Fokus</p>
+      <div
+        class="border border-2 border-[#2CE0D3] w-40 h-40 flex justify-center items-center rounded-full"
+      >
+        <div class="text-white">
+          <span id="menit" class="text-5xl">00</span>
+          <span class="text-5xl">:</span>
+          <span id="detik" class="text-5xl">00</span>
+        </div>
+      </div>
+      <div>
+        <!-- reset button -->
+        <button
+          class="bg-red-600 text-lg text-white px-10 py-2 rounded-md"
+          id="btn-reset"
+        >
+          Reset
+        </button>
+        <!-- start button -->
+        <button
+          class="bg-[#1BB0EC] text-lg text-white px-10 py-2 rounded-md"
+          id="btn"
+        >
+          Mulai
+        </button>
+      </div>
+      <div>
+        <div>
+          <label for="menit">Waktu fokus</label>
+          <span id="fokus">25 menit</span>
+          <div class="flex items-center gap-5">
+            <input
+              type="number"
+              placeholder="Menit"
+              class="w-full border p-2 my-1 border-[#660AC2] rounded-md shadow-md focus:outline-[#660AC2] bg-inherit"
+              id="input-fokus"
+            />
+            <button
+              class="bg-[#660AC2] text-lg block mx-auto py-2 px-3 text-white rounded-md hover:bg-[#5507a3] transition-all"
+              id="btn-fokus"
+            >
+              Simpan
+            </button>
+          </div>
+        </div>
+        <!-- waktu istirahat -->
+        <div class="mt-5">
+          <label for="menit">Waktu istirahat</label>
+          <span id="istirahat">5 menit</span>
+          <div class="flex items-center gap-5">
+            <input
+              type="number"
+              placeholder="Menit"
+              class="w-full border p-2 my-1 border-[#660AC2] rounded-md shadow-md focus:outline-[#660AC2] bg-inherit"
+              id="input-istirahat"
+            />
+            <button
+              class="bg-[#660AC2] text-lg block mx-auto py-2 px-3 text-white rounded-md hover:bg-[#5507a3] transition-all"
+              id="btn-istirahat"
+            >
+              Simpan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../asset/script/script.js"></script>
+  </body>
+</html>
